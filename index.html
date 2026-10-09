@@ -1,0 +1,414 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b1428">
+
+  <title>For Shalu ♡ | Happy Birthday Melody</title>
+
+  <meta
+    name="description"
+    content="A little burgundy scrapbook made with love for Shalu's birthday."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">little things ♡</a>
+
+    <button class="music-toggle" id="musicToggle" type="button">
+      <span id="musicIcon">♫</span>
+      <span id="musicLabel">Play music</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-screen" id="countdownScreen">
+      <div class="countdown-card">
+
+        <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+
+        <div class="tiny-heart">♡</div>
+
+        <h1>Someone's special<br>
+          day is almost here.</h1>
+
+        <p class="subtitle">
+          Ek chhota sa surprise, just for you.
+        </p>
+
+        <div class="countdown" aria-label="Time until birthday">
+          <div class="time-box">
+            <span id="days">00</span>
+            <small>days</small>
+          </div>
+
+          <span class="colon">:</span>
+
+          <div class="time-box">
+            <span id="hours">00</span>
+            <small>hours</small>
+          </div>
+
+          <span class="colon">:</span>
+
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <small>minutes</small>
+          </div>
+
+          <span class="colon">:</span>
+
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <small>seconds</small>
+          </div>
+        </div>
+
+        <p class="date-note">10 October 2026 · 12:00 AM IST</p>
+
+        <div class="divider"><span>✳</span></div>
+
+        <p class="small-note">
+          Kuch surprises ka apna perfect time hota hai.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- BIRTHDAY EXPERIENCE -->
+    <div id="birthdayExperience" hidden>
+
+      <!-- HERO -->
+      <section class="hero section" id="home">
+
+        <div class="hero-decoration decoration-one">✳</div>
+        <div class="hero-decoration decoration-two">♡</div>
+
+        <div class="hero-content">
+
+          <span class="eyebrow">10 · 10 · 2026</span>
+
+          <p class="hero-pretitle">a little birthday scrapbook for</p>
+
+          <h1 class="hero-title">
+            Shalu<span class="title-dot">.</span>
+          </h1>
+
+          <p class="nickname">aka my favourite Melody ♡</p>
+
+          <div class="hero-sticker">made with<br>a little love</div>
+
+          <p class="hero-description">
+            Aaj ka din thoda aur pretty hai,<br>
+            because it's your day.
+          </p>
+
+          <a class="button button-light" href="#letter">
+            Open your little surprise <span>↗</span>
+          </a>
+
+        </div>
+
+        <div class="hero-bottom">
+          <span>SCROLL A LITTLE</span>
+          <span class="scroll-line"></span>
+        </div>
+
+      </section>
+
+
+      <!-- INTRO -->
+      <section class="intro section">
+
+        <span class="eyebrow">A PAGE JUST FOR YOU</span>
+
+        <h2>Some people make<br>
+          ordinary days <em>special.</em></h2>
+
+        <p>
+          Toh socha, tumhare special day ke liye bhi
+          kuch special hona chahiye.
+          Nothing too fancy, bas ek chhoti si digital memory.
+        </p>
+
+        <div class="tiny-flower">✿</div>
+
+      </section>
+
+
+      <!-- SCRAPBOOK PHOTOS -->
+      <section class="memories section" id="memories">
+
+        <div class="section-heading">
+          <span class="eyebrow">LITTLE MOMENTS</span>
+          <h2>A tiny corner<br>of <em>memories.</em></h2>
+          <p>Three little frames for your favourite pictures.</p>
+        </div>
+
+        <div class="photo-grid">
+
+          <figure class="photo-card photo-card-one">
+            <span class="tape"></span>
+
+            <div class="photo-frame">
+              <img
+                src="photos/photo1.jpg"
+                alt="A favourite picture of Shalu"
+                loading="lazy"
+                onerror="this.closest('.photo-frame').classList.add('photo-placeholder'); this.remove();"
+              >
+
+              <div class="photo-fallback">
+                <span>♡</span>
+                <small>your favourite smile</small>
+              </div>
+            </div>
+
+            <figcaption>the pretty little things</figcaption>
+            <span class="photo-number">01</span>
+          </figure>
+
+
+          <figure class="photo-card photo-card-two">
+            <span class="tape"></span>
+
+            <div class="photo-frame">
+              <img
+                src="photos/photo2.jpg"
+                alt="A sweet memory of Shalu"
+                loading="lazy"
+                onerror="this.closest('.photo-frame').classList.add('photo-placeholder'); this.remove();"
+              >
+
+              <div class="photo-fallback">
+                <span>✿</span>
+                <small>a little sunshine</small>
+              </div>
+            </div>
+
+            <figcaption>moments worth keeping</figcaption>
+            <span class="photo-number">02</span>
+          </figure>
+
+
+          <figure class="photo-card photo-card-three">
+            <span class="tape"></span>
+
+            <div class="photo-frame">
+              <img
+                src="photos/photo3.jpg"
+                alt="Another favourite picture of Shalu"
+                loading="lazy"
+                onerror="this.closest('.photo-frame').classList.add('photo-placeholder'); this.remove();"
+              >
+
+              <div class="photo-fallback">
+                <span>☾</span>
+                <small>just being you</small>
+              </div>
+            </div>
+
+            <figcaption>one for the scrapbook</figcaption>
+            <span class="photo-number">03</span>
+          </figure>
+
+        </div>
+
+        <p class="memory-footnote">
+          <span>✳</span> Every picture deserves its own little place.
+        </p>
+
+      </section>
+
+
+      <!-- LETTER -->
+      <section class="letter-section section" id="letter">
+
+        <div class="letter-wrap">
+
+          <div class="letter-side-note">
+            A LITTLE<br>NOTE FOR YOU
+          </div>
+
+          <article class="letter-card">
+
+            <div class="letter-top">
+              <span>dear melody,</span>
+              <span class="letter-heart">♡</span>
+            </div>
+
+            <div class="letter-body">
+              <h2>Happy Birthday,<br><em>Shalu.</em></h2>
+
+              <p>
+                Hey Shalu,
+              </p>
+
+              <p>
+                Sabse pehle, happiest birthday to you! ♡
+              </p>
+
+              <p>
+                Kaafi time ho gaya hai baat kiye hue,
+                and life sometimes takes people in different
+                directions. But aaj tumhara special day hai,
+                toh I wanted to wish you something genuinely nice.
+              </p>
+
+              <p>
+                I hope this new year of your life brings you
+                peaceful days, genuine smiles, beautiful surprises,
+                and people who make you feel appreciated.
+              </p>
+
+              <p>
+                May you keep finding little reasons to smile,
+                dreams that excite you, and moments that make
+                life feel a little more magical.
+              </p>
+
+              <p>
+                Hamesha khush rehna, apna khayal rakhna,
+                aur apni cute si smile kabhi mat khona.
+              </p>
+
+              <p>
+                Enjoy your day, Melody. You deserve all the
+                good things that life has to offer. ♡
+              </p>
+
+              <p class="letter-signoff">
+                With warm wishes,<br>
+                <em>someone wishing you a beautiful year ahead.</em>
+              </p>
+            </div>
+
+            <div class="letter-bottom">
+              <span>10.10.26</span>
+              <span>sealed with ♡</span>
+            </div>
+
+          </article>
+
+          <div class="letter-sticker">a little<br>birthday love ♡</div>
+
+        </div>
+
+      </section>
+
+
+      <!-- CAKE -->
+      <section class="cake-section section" id="cake">
+
+        <span class="eyebrow">MAKE A LITTLE WISH</span>
+
+        <h2>One wish.<br><em>A thousand possibilities.</em></h2>
+
+        <p class="cake-instruction">
+          Tap the cake to blow out the candles.
+        </p>
+
+        <button
+          class="cake-button"
+          id="cakeButton"
+          type="button"
+          aria-label="Blow out the birthday cake candles"
+        >
+
+          <div class="cake">
+            <div class="candles" id="candles">
+
+              <span class="candle candle-one">
+                <i class="flame"></i>
+              </span>
+
+              <span class="candle candle-two">
+                <i class="flame"></i>
+              </span>
+
+              <span class="candle candle-three">
+                <i class="flame"></i>
+              </span>
+
+            </div>
+
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+            <div class="cake-plate"></div>
+          </div>
+
+        </button>
+
+        <p id="wishMessage" class="wish-message" aria-live="polite">
+          Close your eyes and make a wish. ♡
+        </p>
+
+        <button class="button button-outline" id="relightButton" hidden>
+          Light the candles again ↻
+        </button>
+
+      </section>
+
+
+      <!-- ENDING -->
+      <section class="ending section">
+
+        <div class="ending-heart">♡</div>
+
+        <span class="eyebrow">AND FINALLY</span>
+
+        <h2>Here's to your<br><em>next chapter.</em></h2>
+
+        <p>
+          More laughter, more little adventures,
+          more reasons to be happy.
+        </p>
+
+        <p class="ending-name">
+          Happy Birthday, Shalu.
+        </p>
+
+        <div class="ending-flower">✿</div>
+
+        <a href="#home" class="back-top">back to the beginning ↑</a>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>made with ♡ · a little scrapbook for melody</p>
+    <span>10 / 10 / 26</span>
+  </footer>
+
+
+  <!-- Replace this file with your own music -->
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
+```
